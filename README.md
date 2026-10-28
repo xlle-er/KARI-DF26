@@ -7,7 +7,7 @@ KARI 是由 ESP32-S3 底盘与 Web、Android 或 iOS 客户端组成的陪伴机
 ## 开始使用
 
 1. 阅读[首次安装与接线](docs/installation.md)，确认开发板、供电和电机接线。
-2. 通过[部署工具](https://github.com/xlle-er/KARI-DF26-Skill)或[固件安装页源码](https://github.com/xlle-er/KARI-DF26-Firmware/tree/main/installer)安装 KARI 固件。
+2. 通过[部署工具](https://github.com/xlle-er/KARI-DF26-Skill)或[网页安装页](https://xlle-er.github.io/KARI-DF26-Firmware/)安装 KARI 固件。
 3. 选择 [Web](docs/web.md)、[Android](docs/android.md) 或 [iOS](docs/ios.md) 客户端，重新配对并开始陪伴。
 4. 遇到连接、权限或更新问题，查看[维护与排障](docs/troubleshooting.md)。
 

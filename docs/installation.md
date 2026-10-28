@@ -19,7 +19,9 @@ ESP32 与 L298N 共地，拔掉 ENA / ENB 跳帽。烧录与接线配置期间�
 
 推荐按[Agent 部署工具说明](https://github.com/xlle-er/KARI-DF26-Skill#一句话安装并烧录)执行。工具会识别串口、下载并校验匹配的官方固件，再引导接线配置。多个设备时必须明确选择目标串口。
 
-也可克隆[固件仓库](https://github.com/xlle-er/KARI-DF26-Firmware)，在 `installer` 目录执行 `npm ci`、`npm run dev`，使用电脑 Chrome / Edge 打开显示的 localhost 地址。清单需要配套的已构建固件文件，准备方法见[固件开发说明](https://github.com/xlle-er/KARI-DF26-Firmware#固件开发维护者)。
+也可直接打开[网页安装页](https://xlle-er.github.io/KARI-DF26-Firmware/)，使用电脑 Chrome / Edge，按页面选择板型并安装。
+
+需要本机运行时，可克隆[固件仓库](https://github.com/xlle-er/KARI-DF26-Firmware)，在 `installer` 目录执行 `npm ci`、`npm run dev`，使用电脑 Chrome / Edge 打开显示的 localhost 地址。清单需要配套的已构建固件文件，准备方法见[固件开发说明](https://github.com/xlle-er/KARI-DF26-Firmware#固件开发维护者)。
 
 尚未提供有效固件 Release 时，先按模块说明构建，不能使用其他板型或历史固件替代。
 
