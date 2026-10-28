@@ -1,0 +1,31 @@
+# Web 使用
+
+[返回项目首页](../README.md) · [Web 源码与开发说明](https://github.com/xlle-er/KARI-DF26-WEB)
+
+## 本机启动
+
+准备 Node.js 22 或更新版本：
+
+```sh
+git clone https://github.com/xlle-er/KARI-DF26-WEB.git
+cd KARI-DF26-WEB
+npm ci
+npm run build
+cd backend
+npm ci
+npm start
+```
+
+在同一台电脑打开 `http://localhost:3000`。Web 项目直接位于仓库根目录，使用 `main` 分支。
+
+不连接机器人或配置 AI 也能先体验离线陪伴。需要在线 AI 时，参考 `backend/.env.example` 创建本地 `.env`，填写自己的服务配置；不要提交或分享密钥。服务拆分见[部署文档](https://github.com/xlle-er/KARI-DF26-WEB/blob/main/docs/split-deployment.md)。
+
+## 连接与陪伴
+
+从“机器人”页面扫描并主动选择 `KARI Body`；Web Bluetooth 需要兼容浏览器和 HTTPS / localhost。Wi-Fi 管理使用本机桥接和设备局域网地址，手机与设备须在可互通的网络中。
+
+选择人格、界面语言和 AI 服务，按需授权麦克风、相机及蓝牙，再启动陪伴。语音唤醒在支持的浏览器中显式开启，使用“你好卡里”或“Hey KARI”。默认词表不包含历史称呼。
+
+手机访问电脑服务需要配置 HTTPS 或合适的安全上下文，不能把手机的 `localhost` 当作电脑。模型及运行库按配置从后端加载，首次下载可能较慢；手动唤醒始终是排查入口。
+
+身体运动需要明确允许；停止陪伴、断线或异常后重新检查状态。目标检测与跟随的限制见[功能说明](https://github.com/xlle-er/KARI-DF26-WEB/blob/main/docs/web-1.3.0/CAPABILITIES.md)。
