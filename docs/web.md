@@ -20,6 +20,8 @@ npm start
 
 不连接机器人或配置 AI 也能先体验离线陪伴。需要在线 AI 时，参考 `backend/.env.example` 创建本地 `.env`，填写自己的服务配置；不要提交或分享密钥。服务拆分见[部署文档](https://github.com/xlle-er/KARI-DF26-WEB/blob/main/docs/split-deployment.md)。
 
+如果该地址曾安装历史 PWA，请先移除旧快捷方式并清除该站点缓存，再重新打开 KARI。新版本使用独立配置键，需要重新填写服务与设备设置。
+
 ## 连接与陪伴
 
 从“机器人”页面扫描并主动选择 `KARI Body`；Web Bluetooth 需要兼容浏览器和 HTTPS / localhost。Wi-Fi 管理使用本机桥接和设备局域网地址，手机与设备须在可互通的网络中。
