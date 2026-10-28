@@ -13,6 +13,8 @@ KARI 是由 ESP32-S3 底盘与 Web、Android 或 iOS 客户端组成的陪伴机
 
 ## 模块仓库与下载
 
+正式稳定版本：Web / Android / iOS **1.3.0**，固件 **2.2.2**，部署工具 **0.2.0**。版本验证与维护者真机确认见[验证记录](docs/validation.md)。
+
 | 模块 | 源码 | 下载 / 安装 |
 | --- | --- | --- |
 | Web | [KARI-DF26-WEB](https://github.com/xlle-er/KARI-DF26-WEB) | 按[Web 使用说明](docs/web.md)本机运行 |
